@@ -2,12 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: kollektif;
 }
+//tipografías
 @font-face {
     font-family: kollektif;
     src: url(../resources/fonts/Kollektif.ttf);
 }
-header.inicio {background-color:  #ffb703;
+@import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
+//font-family: "Sedan", serif;
+
+header.inicio {
+    background-color: #985F99;
     border-bottom: #023047 10px solid;
     display: flex;
     align-items: center;
@@ -15,24 +21,29 @@ header.inicio {background-color:  #ffb703;
 }
 
 nav.nav {
-   
-a {
-    text-decoration: none;
-    color: #023047;
-   text-transform: uppercase;
-    font-size: medium;
-    font-family: kollektif;
-    margin: 2px 10px;
-    border: #023047 solid 1px;
-    border-radius: 15px;
-    padding: 5px;
-    box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
-}
-    background-color: #ffb703;
+
+    a {
+        text-decoration: none;
+        color: #023047;
+        text-transform: uppercase;
+        font-size: medium;
+        font-family: kollektif;
+        margin: 2px 10px;
+        border: #023047 solid 1px;
+        border-radius: 15px;
+        padding: 5px;
+        box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+    }
+
+    a :hover {
+        transform: scaleX(1.5);
+        transition: 3s ease-in-out;
+    }
+
+    background-color:#985F99;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "links-1 logo links-2";
+    grid-template-areas: "links-1 logo links-2";
 
     ul .links-1 {
         display: flex;
@@ -42,7 +53,7 @@ a {
     }
 
     div .logo {
-      
+
         grid-area: logo;
     }
 }
@@ -52,13 +63,14 @@ ul .links-2 {
     justify-content: space-evenly;
     align-items: center;
     grid-area: links-2;
-    
+
 }
 
 
 
-.nav ul, .logo {
-    background-color: #ffb703;
+.nav ul,
+.logo {
+    background-color: #985F99;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -67,6 +79,7 @@ ul .links-2 {
 
 .logo img {
     height: 80px;
+    border-radius: 15px;
 }
 
 
@@ -75,113 +88,257 @@ ul .links-2 {
     align-items: center;
     justify-content: center;
 }
-.main-inicio{
+
+.main-inicio {
     display: flex;
-    background-color:#8ecae6 ;
+    background-color: #bfedc1;
     flex-wrap: wrap;
     justify-content: center;
-    img{
+
+    img {
         height: 400px;
         border-radius: 15px;
-        box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+        margin: 15px;
+
     }
-}
-  .presentacion{
-   
-         font-family: kollektif;
-        text-align: center;
-        display: inline;
-        align-items: center;
-        justify-content: center;
-      
-    }
-    .tarjeta-ingresa{
-        border: #023047 solid 3px;
-        border-radius: 15px;
-        padding: 20px;
-      display: block;
-      margin: 20px;
-      box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
-    }
-    .button{
-        color: aliceblue;
-        background-color: #023047;
-        border: #023047;
-        border-radius: 25px;
-        font-family: kollektif;
-        font-weight: bold;
-        font-variant: small-caps;
-        margin: 25px;
-        padding: 15px;
-        box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
-    }
-  .footer{
-    text-align: center;
-    color: antiquewhite;
-    background-color:#023047 ;
-    font-family: kollektif;
-    ;
-  }
-  .propuestas{
-    display: flex;
-    background-color: antiquewhite;
-    border-radius: 10px;
-    .contiene-propuestas{
+    .por-que{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    border-radius: 15px;
-    
-}
-        .propuesta{
-            img{
-                margin: 20px;
-                width: 150px;
-                height: 100px;
+        text-align: center;
+        flex-direction: column;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 2px 3px 5px 5px rgba(59, 132, 185, 0.534);
+        h2{
+            align-self: center;
+            display: inline;
+            margin: 5px;
+            padding: 5px;
+            font-family: Sedan;
+        }
+        ul{
+            list-style-type: none;
+            flex-direction: row;
+           display: flex;
+            li{
+               display: inline;
+               float: left;
+               
+               border-radius: 15px;
+               box-shadow: 2px 3px 2px 2px rgba(59, 132, 185, 0.534);
+               margin: 5px;
+               padding: 5px;
+               width: 20%;
+              .nosotros{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                              }
+            
+               p{
+              text-align: center;
+                
+               }
+               a{
+                display: block;
+                img{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+               }
+               a :hover{
+                transform: scale(1.25);
+                transition: 3s ease-in-out;
+               }
+                
             }
         }
     }
-  
+}
+
+.presentacion {
+
+    font-family: kollektif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tarjeta-ingresa {
+    img {
+        width: 25px;
+        height: 25px;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite
+    }
+
+    border: #023047 solid 3px;
+    border-radius: 15px;
+    padding: 20px;
+    display: block;
+    margin: 20px;
+    box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+
+}
+
+@keyframes example {
+    0% {
+        background-color: rgb(239, 179, 89);
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: rgb(252, 252, 85);
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: rgb(163, 218, 242);
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: rgb(249, 108, 207);
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: rgb(247, 142, 51);
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.button {
+    color: aliceblue;
+    background-color: #023047;
+    border: #023047;
+    border-radius: 25px;
+    font-family: kollektif;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin: 25px;
+    padding: 15px;
+    box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+}
+
+.footer {
+    text-align: center;
+    color: antiquewhite;
+    background-color: #023047;
+    font-family: kollektif;
+    ;
+}
+
+.propuestas {
+    display: flex;
+    background-color: #B6C9BB;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 20px;
+
+    .contiene-propuestas {
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        border-radius: 15px;
+
+        .propuesta {
+
+            img {
+                margin: 20px;
+                width: 150px;
+                height: 100px;
+                opacity: 0.8;
+            }
+        }
+        
+        .propuesta :hover :not(.desc) {
+            transform: scale(1.25);
+            transition: 3s ease-in-out;
+            opacity: 1.0;
+        }
+        div .desc{
+            text-align: center;
+        }
+    }
+}
+
+
+
 //media querys
 //mobile last max width
-@media (max-width: 650px){
-  nav.nav {  display: grid;
+@media (max-width: 650px) {
+    nav.nav {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-          "logo logo"
-          "links-1 links-2";
-      }
-      
-      .links-1 { grid-area: links-1; }
-      
-      .links-2 { grid-area: links-2; }
-      
-      .logo { grid-area: logo; }
-      
+            "logo logo"
+            "links-1 links-2";
+    }
+
+    .links-1 {
+        grid-area: links-1;
+    }
+
+    .links-2 {
+        grid-area: links-2;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .main-inicio {
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
 }
-@media (max-width: 480px){
-    nav.nav {  display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-          gap: 0px 0px;
-          grid-auto-flow: row;
-          grid-template-areas:
+
+@media (max-width: 480px) {
+    nav.nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
             "logo logo"
             "links-1 links-1"
             "links-2 links-2";
-        }
-        
-        .links-1 { grid-area: links-1; }
-        
-        .links-2 { grid-area: links-2; }
-        
-        .logo { grid-area: logo; }
-        
-  }
+    }
 
+    .links-1 {
+        grid-area: links-1;
+    }
+
+    .links-2 {
+        grid-area: links-2;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+}
