@@ -71,6 +71,52 @@ a {
     align-items: center;
     justify-content: center;
 }
+.main-inicio{
+    display: flex;
+    background-color:#8ecae6 ;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        height: 400px;
+        border-radius: 15px;
+        box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+    }
+}
+  .presentacion{
+         font-family: kollektif;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    }
+    .tarjeta-ingresa{
+        border: #023047 solid 3px;
+        border-radius: 15px;
+        padding: 20px;
+      display: block;
+      margin: 20px;
+      box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+    }
+    .button{
+        color: aliceblue;
+        background-color: #023047;
+        border: #023047;
+        border-radius: 25px;
+        font-family: kollektif;
+        font-weight: bold;
+        font-variant: small-caps;
+        margin: 25px;
+        padding: 15px;
+        box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+    }
+  .footer{
+    text-align: center;
+    color: antiquewhite;
+    background-color:#023047 ;
+    font-family: kollektif;
+    ;
+  }
 //media querys
 //mobile last max width
 @media (max-width: 650px){
@@ -110,3 +156,4 @@ a {
         .logo { grid-area: logo; }
         
   }
+
