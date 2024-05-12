@@ -10,20 +10,20 @@
   src: url(../resources/fonts/Kollektif.ttf); }
 
 header.inicio {
-  background-color: #56d8d4;
+  background-color: #00BCD4;
   border-bottom: #023047 10px solid;
   display: flex;
   align-items: center;
   justify-content: center; }
 
 nav.nav {
-  background-color: #56d8d4;
+  background-color: #00BCD4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "links-1 logo links-2"; }
   nav.nav a {
     text-decoration: none;
-    color: #023047;
+    color: #212121;
     text-transform: uppercase;
     font-size: medium;
     font-family: kollektif;
@@ -50,7 +50,7 @@ ul .links-2 {
 
 .nav ul,
 .logo {
-  background-color: #56d8d4;
+  background-color: #00BCD4;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@ ul .links-2 {
 
 .main-inicio {
   display: flex;
-  background-color: #bfedc1;
+  background-color: #B2EBF2;
   flex-wrap: wrap;
   justify-content: center; }
   .main-inicio img {
@@ -109,8 +109,8 @@ ul .links-2 {
         .main-inicio .por-que ul li a {
           display: block; }
           .main-inicio .por-que ul li a img {
-            width: 25px;
-            height: 25px;
+            width: 35px;
+            height: 35px;
             border-radius: 50%; }
         .main-inicio .por-que ul li a :hover {
           transform: scale(1.25);
@@ -124,7 +124,7 @@ ul .links-2 {
   justify-content: center; }
 
 .tarjeta-ingresa {
-  border: #023047 solid 3px;
+  border: #757575 solid 3px;
   border-radius: 15px;
   padding: 20px;
   display: block;
@@ -160,9 +160,9 @@ ul .links-2 {
     top: 0px; } }
 
 .button {
-  color: aliceblue;
-  background-color: #023047;
-  border: #023047;
+  color: #FFFFFF;
+  background-color: #0097A7;
+  border: #0097A7;
   border-radius: 25px;
   font-family: kollektif;
   font-weight: bold;
@@ -173,13 +173,13 @@ ul .links-2 {
 
 .footer {
   text-align: center;
-  color: antiquewhite;
-  background-color: #023047;
+  color: #FFFFFF;
+  background-color: #0097A7;
   font-family: kollektif; }
 
 .propuestas {
   display: flex;
-  background-color: #B6C9BB;
+  background-color: #BDBDBD;
   border-radius: 10px;
   flex-wrap: wrap;
   justify-content: center;
