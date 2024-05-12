@@ -13,7 +13,7 @@
 //font-family: "Sedan", serif;
 
 header.inicio {
-    background-color: #985F99;
+    background-color: #56d8d4;
     border-bottom: #023047 10px solid;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ nav.nav {
         font-size: medium;
         font-family: kollektif;
         margin: 2px 10px;
-        border: #023047 solid 1px;
+      
         border-radius: 15px;
         padding: 5px;
         box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
@@ -40,7 +40,7 @@ nav.nav {
         transition: 3s ease-in-out;
     }
 
-    background-color:#985F99;
+    background-color:#56d8d4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "links-1 logo links-2";
@@ -70,7 +70,7 @@ ul .links-2 {
 
 .nav ul,
 .logo {
-    background-color: #985F99;
+    background-color: #56d8d4;
     list-style-type: none;
     display: flex;
     align-items: center;
