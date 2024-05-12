@@ -19,6 +19,17 @@ nav.nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "links-1 logo links-2"; }
+  nav.nav a {
+    text-decoration: none;
+    color: #023047;
+    text-transform: uppercase;
+    font-size: medium;
+    font-family: kollektif;
+    margin: 2px 10px;
+    border: #023047 solid 1px;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534); }
   nav.nav ul .links-1 {
     display: flex;
     justify-content: space-evenly;
@@ -43,14 +54,6 @@ ul .links-2 {
 .logo img {
   height: 80px; }
 
-a {
-  text-decoration: none;
-  color: #023047;
-  text-transform: uppercase;
-  font-size: medium;
-  font-family: kollektif;
-  margin: 2px 10px; }
-
 .logo {
   display: flex;
   align-items: center;
@@ -69,7 +72,7 @@ a {
 .presentacion {
   font-family: kollektif;
   text-align: center;
-  display: flex;
+  display: inline;
   align-items: center;
   justify-content: center; }
 
@@ -98,6 +101,23 @@ a {
   color: antiquewhite;
   background-color: #023047;
   font-family: kollektif; }
+
+.propuestas {
+  display: flex;
+  background-color: antiquewhite;
+  border-radius: 10px; }
+  .propuestas .contiene-propuestas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    border-radius: 15px; }
+  .propuestas .propuesta img {
+    margin: 20px;
+    width: 150px;
+    height: 100px; }
 
 @media (max-width: 650px) {
   nav.nav {
