@@ -13,7 +13,7 @@
 //font-family: "Sedan", serif;
 
 header.inicio {
-    background-color:#00BCD4;
+    background-color: #FAF3DD;
     border-bottom: #023047 10px solid;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@ nav.nav {
         transition: 3s ease-in-out;
     }
 
-    background-color:#00BCD4;
+    background-color:#FAF3DD;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "links-1 logo links-2";
@@ -70,7 +70,7 @@ ul .links-2 {
 
 .nav ul,
 .logo {
-    background-color: #00BCD4;
+    background-color:#FAF3DD;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -90,20 +90,17 @@ ul .links-2 {
 }
 
 .main-inicio {
-    display: flex;
-    background-color:#B2EBF2;
+   
+    background-color:#AED9E0;
     flex-wrap: wrap;
     justify-content: center;
 
-    img {
-        height: 400px;
-        border-radius: 15px;
-        margin: 15px;
-
-    }
+    
     .por-que{
+        background-color: #FAF3DD;
         display: flex;
         flex-wrap: wrap;
+        height: 200px;
         text-align: center;
         flex-direction: column;
         margin: 20px;
@@ -120,6 +117,7 @@ ul .links-2 {
             list-style-type: none;
             flex-direction: row;
            display: flex;
+           margin-bottom: 10px;
             li{
                display: inline;
                float: left;
@@ -156,7 +154,12 @@ ul .links-2 {
         }
     }
 }
-
+.empieza{
+    background-repeat: no-repeat;
+    background-image: url(../resources/amigasEscaleraS.jpg);
+    
+    background-size: 100%;
+}
 .presentacion {
 
     font-family: kollektif;
@@ -171,11 +174,12 @@ ul .links-2 {
     img {
         width: 25px;
         height: 25px;
+        border-radius: 50%;
         animation-name: example;
         animation-duration: 10s;
         animation-iteration-count: infinite
     }
-
+background-color:#FAF3DD ;
     border: #757575 solid 3px;
     border-radius: 15px;
     padding: 20px;
@@ -219,8 +223,8 @@ ul .links-2 {
 
 .button {
     color:#FFFFFF;
-    background-color: #0097A7;
-    border:#0097A7;
+    background-color: #FFA69E;
+    border:#FFA69E;
     border-radius: 25px;
     font-family: kollektif;
     font-weight: bold;
@@ -240,14 +244,16 @@ ul .links-2 {
 
 .propuestas {
     display: flex;
-    background-color:#BDBDBD;
+    background-color:#FFA69E;
     border-radius: 10px;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
     margin: 20px;
-
+h2{
+    margin-top: 20px;
+}
     .contiene-propuestas {
         padding: 10px;
         margin: 10px;
@@ -262,17 +268,18 @@ ul .links-2 {
         .propuesta {
 
             img {
+                border-radius: 20px;
                 margin: 20px;
-                width: 150px;
-                height: 100px;
-                opacity: 0.8;
+                width: 200px;
+                height: 120px;
+               
             }
         }
         
         .propuesta :hover :not(.desc) {
             transform: scale(1.25);
             transition: 3s ease-in-out;
-            opacity: 1.0;
+            opacity: 1.5;
         }
         div .desc{
             text-align: center;
@@ -341,4 +348,41 @@ ul .links-2 {
         grid-area: logo;
     }
 
+}
+.destinos{
+    h2{
+        display: inline;
+            margin: 5px;
+            padding: 5px;
+            font-family: Sedan;
+    }
+    display: flex;
+    background-color:#AED9E0;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+        .contiene-destinos{
+       
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        border-radius: 15px;
+        .destino{
+            img {
+                border-radius: 20px;
+               margin: 10px;
+                width: 250px;
+                height: 200px;
+                
+            }
+        }
+        div .desc{
+            text-align: center;
+        }
+    }
 }
